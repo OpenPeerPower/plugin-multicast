@@ -1,0 +1,16 @@
+{
+  "image": "openpeerpower/{arch}-oppio-multicast",
+  "build_from": {
+    "aarch64": "openpeerpower/aarch64-base:3.12",
+    "armhf": "openpeerpower/armhf-base:3.12",
+    "armv7": "openpeerpower/armv7-base:3.12",
+    "amd64": "openpeerpower/amd64-base:3.12",
+    "i386": "openpeerpower/i386-base:3.12"
+  },
+  "args": {
+    "MDNS_REPEATER_VERSION": "1.1.2"
+  },
+  "labels": {
+    "io.opp.type": "multicast"
+  }
+}
